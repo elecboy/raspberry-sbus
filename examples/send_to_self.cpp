@@ -83,11 +83,15 @@ int main(int argc, char **argv)
             lastWrite = now;
 
             sbus_packet_t packet = {
-                    .ch17 = true,
-                    .ch18 = false,
-                    .failsafe = true,
-                    .frameLost = false,
+                    // .ch17 = true,
+                    // .ch18 = false,
+                    // .failsafe = true,
+                    // .frameLost = false,
             };
+            packet.ch17 = true;
+            packet.ch18 = false;
+            packet.failsafe = true;
+            packet.frameLost = false;
 
             for (int i = 0; i < 16; i++)
             {
