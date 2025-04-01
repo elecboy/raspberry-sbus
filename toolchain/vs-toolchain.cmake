@@ -2,12 +2,12 @@ set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_SYSTEM_PROCESSOR aarch64)
 
 # specify the cross compiler
-set(CMAKE_C_COMPILER /opt/vs-linux/x86-arm/gcc-linaro-7.5.0-aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc)
-set(CMAKE_CXX_COMPILER /opt/vs-linux/x86-arm/gcc-linaro-7.5.0-aarch64-linux-gnu/bin/aarch64-linux-gnu-g++)
+set(CMAKE_C_COMPILER /home/changzhijie/src/vs8x9-buildroot/output/host/bin/aarch64-linux-gnu-gcc)
+set(CMAKE_CXX_COMPILER /home/changzhijie/src/vs8x9-buildroot/output/host/bin/aarch64-linux-gnu-g++)
 
 # where is the target environment
-set(CMAKE_FIND_ROOT_PATH /opt/vs-linux/x86-arm/gcc-linaro-7.5.0-aarch64-linux-gnu/aarch64-linux-gnu/libc)
-set(CMAKE_SYSROOT /opt/vs-linux/x86-arm/gcc-linaro-7.5.0-aarch64-linux-gnu/aarch64-linux-gnu/libc)
+set(CMAKE_FIND_ROOT_PATH /home/changzhijie/src/vs8x9-buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot)
+set(CMAKE_SYSROOT /home/changzhijie/src/vs8x9-buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot)
 
 # search for programs in the build host directories
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
